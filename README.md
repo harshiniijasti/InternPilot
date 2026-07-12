@@ -37,7 +37,8 @@ InternPilot helps students discover internships that match their skills, resume,
 ## Harshini Jasti
 
 github : https://github.com/harshiniijasti
-linkedin : https://www.linkedin.com/in/harshinijasti
+
+linkedin:https://www.linkedin.com/in/harshinijasti
 
 
 
