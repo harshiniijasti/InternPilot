@@ -26,8 +26,6 @@ InternPilot helps students discover internships that match their skills, resume,
 
 ## 📌 Future Improvements
 
-- AI Skill Gap Analysis
-- Internship Application Tracker
 - Resume Score Prediction
 - Interview Preparation Assistant
 - Email Notifications
