@@ -1,7 +1,9 @@
 # 🚀 InternPilot
 
 **AI-Powered Internship Discovery & Career Intelligence Platform**
+
 AI+Python
+
 InternPilot helps students discover internships that match their skills, resume, and career goals using AI. The platform provides resume analysis, personalized internship recommendations, Google authentication, and an interactive dashboard for tracking career progress.
 
 ## ✨ Features
