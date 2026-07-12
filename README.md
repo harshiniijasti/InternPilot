@@ -34,7 +34,7 @@ InternPilot helps students discover internships that match their skills, resume,
 
 ## Building AI-powered software that helps students launch successful careers.
 
-# Harshini Jasti
+## Harshini Jasti
 
 github : https://github.com/harshiniijasti
 
