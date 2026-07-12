@@ -32,6 +32,6 @@ InternPilot helps students discover internships that match their skills, resume,
 - Interview Preparation Assistant
 - Email Notifications
 
-Building AI-powered software that helps students launch successful careers.
+## Building AI-powered software that helps students launch successful careers.
 
 
