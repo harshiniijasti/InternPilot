@@ -1,13 +1,13 @@
 # 🚀 InternPilot
 
-> **An AI-Powered Internship Recommendation Platform that helps students discover relevant internship opportunities through intelligent matching and real-time job listings.**
+**An AI-Powered Internship Recommendation Platform that helps students discover relevant internship opportunities through intelligent matching and real-time job listings**
 ---
 
-## 🌐 Live Demo- https://intern-pilot-umber.vercel.app/
+## 🌐 Live Demo - https://intern-pilot-umber.vercel.app/
 
-**Frontend:** https://YOUR-VERCEL-URL.vercel.app
+Frontend: https://YOUR-VERCEL-URL.vercel.app
 
-**Backend API:** https://internpilot-sdiz.onrender.com
+Backend API: https://internpilot-sdiz.onrender.com
 
 ---
 
@@ -101,6 +101,7 @@ The platform combines a responsive user interface with a FastAPI backend to deli
 <img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/a03ed1a2-18bd-4b5e-a55f-dcc367c92344" />
 <img width="941" height="442" alt="image" src="https://github.com/user-attachments/assets/71ee6d47-2d12-442b-aa4c-15d9a8ffed6e" />
 <img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/e6acfc06-ab89-4b0e-aa98-a039de29f5a7" />
+<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/dc8d5229-cdf6-47d2-9986-fc820e7462c7" />
 
 ---
 
