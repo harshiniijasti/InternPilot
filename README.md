@@ -1,45 +1,153 @@
 # 🚀 InternPilot
 
-**AI-Powered Internship Discovery & Career Intelligence Platform**
+> **An AI-Powered Internship Recommendation Platform that helps students discover relevant internship opportunities through intelligent matching and real-time job listings.**
+---
 
-AI+Python
+## 🌐 Live Demo- https://intern-pilot-umber.vercel.app/
 
-InternPilot helps students discover internships that match their skills, resume, and career goals using AI. The platform provides resume analysis, personalized internship recommendations, Google authentication, and an interactive dashboard for tracking career progress.
+**Frontend:** https://YOUR-VERCEL-URL.vercel.app
+
+**Backend API:** https://internpilot-sdiz.onrender.com
+
+---
+
+## 📖 Overview
+
+InternPilot is a modern full-stack web application designed to simplify internship discovery for students.
+
+The platform combines a responsive user interface with a FastAPI backend to deliver personalized internship recommendations. It integrates the Adzuna Jobs API for real-time internship listings while providing secure authentication using Clerk.
+
+---
 
 ## ✨ Features
 
-- 🔐 Secure Google Authentication (Clerk)
-- 📄 Resume Upload
-- 🤖 AI Resume Analysis
-- 🎯 Personalized Internship Matching
-- ❤️ Save Favorite Internships
-- 👤 User Profile Management
-- 📊 Interactive Dashboard
-- 🌙 Modern Responsive UI
+- 🔐 Secure authentication with Clerk
+- 👤 Student profile management
+- 🤖 AI-powered internship recommendations
+- 🔍 Real-time internship search via Adzuna API
+- ❤️ Save favorite internships
+- 📊 Personalized dashboard
+- ⚡ Fast REST API using FastAPI
+- 📱 Fully responsive UI
+- 🎨 Modern and clean user experience
 
-<img width="946" height="437" alt="image" src="https://github.com/user-attachments/assets/56b9a9ac-a26c-4694-bcbb-2fcebe4df700" />
-<img width="862" height="425" alt="image" src="https://github.com/user-attachments/assets/3f9f2c8b-37c7-4837-a82b-c4352b1bc048" />
-<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/50e48d7e-6a8d-4ff4-bef1-47a4610ad97f" />
-<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/95e20c0a-d7bb-4a33-b00e-aeaca0e11f13" />
-<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/75431097-c52a-4586-99ad-5f08b1c3c441" />
+---
 
+## 🛠️ Tech Stack
 
+### Frontend
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Clerk Authentication
+- Framer Motion
 
+### Backend
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
+- Uvicorn
 
-## 📌 Future Improvements
+### APIs & Services
+- Adzuna Jobs API
+- Clerk
+- Render
+- Vercel
+- GitHub
 
-- Resume Score Prediction
-- Interview Preparation Assistant
+---
+
+## 🔑 Environment Variables
+
+### Backend (.env)
+
+```env
+ADZUNA_APP_ID=your_adzuna_app_id
+ADZUNA_APP_KEY=your_adzuna_app_key
+```
+
+---
+
+### Frontend (.env.local)
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
+
+CLERK_SECRET_KEY=your_secret_key
+
+NEXT_PUBLIC_API_URL=https://internpilot-sdiz.onrender.com
+```
+
+---
+
+## 📡 API Endpoints
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/` | API Health Check |
+| GET | `/docs` | Swagger Documentation |
+| POST | `/users` | Create User |
+| GET | `/users/{id}` | Get User |
+| POST | `/saved` | Save Internship |
+| GET | `/saved` | Retrieve Saved Internships |
+
+---
+
+## 🚀 Deployment
+
+| Component | Platform |
+|-----------|----------|
+| Frontend | Vercel |
+| Backend | Render |
+
+---
+
+## 🔮 Future Enhancements
+
+- AI Resume Analysis
+- Resume Parsing
+- Smart Skill Gap Detection
+- Internship Match Score
 - Email Notifications
+- Interview Preparation Assistant
+- PostgreSQL Integration
+- Docker Support
+- Admin Dashboard
+- Advanced Search & Filters
 
-## Building AI-powered software that helps students launch successful careers.
+---
 
-## Harshini Jasti
+## 📸 Screenshots
 
+<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/a03ed1a2-18bd-4b5e-a55f-dcc367c92344" />
+<img width="941" height="442" alt="image" src="https://github.com/user-attachments/assets/71ee6d47-2d12-442b-aa4c-15d9a8ffed6e" />
+<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/e6acfc06-ab89-4b0e-aa98-a039de29f5a7" />
 
-https://github.com/harshiniijasti
+---
 
-https://www.linkedin.com/in/harshinijasti
+## 👩‍💻 Author
+
+**Harshini Jasti**
+
+Aspiring Software Engineer & AI Engineer
+
+GitHub: https://github.com/harshiniijasti
+
+LinkedIn: https://www.linkedin.com/in/harshinijasti
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+See the **LICENSE** file for more information.
+
+---
+
+⭐ If you found this project helpful, consider giving it a star!
 
 
 
