@@ -59,29 +59,6 @@ The platform combines a responsive user interface with a FastAPI backend to deli
 
 ---
 
-## 🔑 Environment Variables
-
-### Backend (.env)
-
-```env
-ADZUNA_APP_ID=your_adzuna_app_id
-ADZUNA_APP_KEY=your_adzuna_app_key
-```
-
----
-
-### Frontend (.env.local)
-
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
-
-CLERK_SECRET_KEY=your_secret_key
-
-NEXT_PUBLIC_API_URL=https://internpilot-sdiz.onrender.com
-```
-
----
-
 ## 📡 API Endpoints
 
 | Method | Endpoint | Description |
