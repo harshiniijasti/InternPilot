@@ -14,25 +14,30 @@ export default function ResumePage() {
     const formData = new FormData();
     formData.append("resume", file);
 
+    console.log(process.env.NEXT_PUBLIC_API_URL);
+    
     try {
-      const response = await fetch("http://127.0.0.1:8000/upload-resume", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/upload-resume`,
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Upload failed");
+      }
 
       const data = await response.json();
 
-console.log(data);
+      console.log(data);
 
-localStorage.setItem(
-  "analysis",
-  JSON.stringify(data)
-);
+      localStorage.setItem("analysis", JSON.stringify(data));
 
-console.log(localStorage.getItem("analysis"));
+      console.log(localStorage.getItem("analysis"));
 
-window.location.href = "/dashboard/analysis";
-
+      window.location.href = "/dashboard/analysis";
     } catch (error) {
       console.error(error);
       alert("Upload failed.");
@@ -42,49 +47,44 @@ window.location.href = "/dashboard/analysis";
   return (
     <div className="text-white">
       <div className="mx-auto max-w-2xl rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
-
-        <h1 className="text-3xl font-bold">
-          📄 Upload Resume
-        </h1>
+        <h1 className="text-3xl font-bold">📄 Upload Resume</h1>
 
         <p className="mt-2 text-slate-400">
           Upload your latest resume in PDF format.
         </p>
 
         <div className="mt-8">
-  <label
-    htmlFor="resume"
-    className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-violet-500 bg-slate-800/50 p-10 transition hover:bg-slate-800"
-  >
-    <span className="text-5xl">📄</span>
+          <label
+            htmlFor="resume"
+            className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-violet-500 bg-slate-800/50 p-10 transition hover:bg-slate-800"
+          >
+            <span className="text-5xl">📄</span>
 
-    <h3 className="mt-4 text-xl font-semibold">
-      Click to upload your resume
-    </h3>
+            <h3 className="mt-4 text-xl font-semibold">
+              Click to upload your resume
+            </h3>
 
-    <p className="mt-2 text-slate-400">
-      PDF files only
-    </p>
+            <p className="mt-2 text-slate-400">PDF files only</p>
 
-    {file && (
-      <div className="mt-5 rounded-lg bg-violet-600 px-4 py-2 text-white">
-        ✅ {file.name}
-      </div>
-    )}
-  </label>
+            {file && (
+              <div className="mt-5 rounded-lg bg-violet-600 px-4 py-2 text-white">
+                ✅ {file.name}
+              </div>
+            )}
+          </label>
 
-  <input
-    id="resume"
-    type="file"
-    accept=".pdf"
-    onChange={(e) => {
-      if (e.target.files) {
-        setFile(e.target.files[0]);
-      }
-    }}
-    className="hidden"
-  />
-</div>
+          <input
+            id="resume"
+            type="file"
+            accept=".pdf"
+            onChange={(e) => {
+              if (e.target.files) {
+                setFile(e.target.files[0]);
+              }
+            }}
+            className="hidden"
+          />
+        </div>
 
         <button
           onClick={handleUpload}
@@ -92,7 +92,6 @@ window.location.href = "/dashboard/analysis";
         >
           Upload Resume
         </button>
-
       </div>
     </div>
   );

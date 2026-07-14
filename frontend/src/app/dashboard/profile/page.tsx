@@ -31,6 +31,8 @@ export default function ProfilePage() {
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
+  console.log(process.env.NEXT_PUBLIC_API_URL);
+  
   try {
     const response = await fetch(
   `${process.env.NEXT_PUBLIC_API_URL}/users`, {
